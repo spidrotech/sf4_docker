@@ -14,4 +14,11 @@ docker-compose up -d
 php bin/console server:run
 
 
+Idea comes from websites example : 
+https://remixjobs.com/ 
+https://www.lesjeudis.com/
+https://www.monster.fr/
+https://www.chooseyourboss.com/
+https://www.freelance-info.fr/
+
 # Technologies : PHP7, Symfony4, angular, varnish cache, git, docker, rest api
