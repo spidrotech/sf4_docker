@@ -7,11 +7,30 @@ composer install
 
 # download & install docker : https://docs.docker.com/install/ 
 
-# configure docker env : 
+# run the application : 
 docker-compose up -d
 
-# launch the app :
+# launch in browser (TODO: if no traefik installed) :
 php bin/console server:run
+
+
+###############################################################
+#     _                      _                 ____ _     ___
+#    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+#   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+#  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+# /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+#                |___/
+###############################################################
+
+# get in frontend directory
+cd frontend
+
+# start angular with (-o) option to automatically open browser on http://localhost:4200/
+ng serve --open
+
+# Enjoy !
+
 
 
 Idea comes from websites example : 
@@ -21,4 +40,5 @@ https://www.monster.fr/
 https://www.chooseyourboss.com/
 https://www.freelance-info.fr/
 
-# Technologies : PHP7, Symfony4, angular, varnish cache, git, docker, rest api
+# Technologies : PHP7, Symfony4, angular6, jQuery3.3, bootstrap4, rest api
+# Environment : Docker, traefik, portainer, git, Trello

@@ -1,5 +1,6 @@
 <?php
 namespace App\Utils\Http\Rest\Controller;
+
 use App\Application\Service\ArticleService;
 use App\Domain\Model\Article\Article;
 use App\Domain\Model\Article\ArticleRepositoryInterface;
@@ -26,6 +27,20 @@ final class ArticleController extends FOSRestController
     {
         $this->articleService = $articleService;
     }
+    /**
+     * Creates an Article resource
+     * @Rest\Post("/")
+     * @param Request $request
+     * @return View
+     */
+    public function home(Request $request): View
+    {
+        
+        $article = 'welcome!';
+        // In case our POST was a success we need to return a 201 HTTP CREATED response with the created object
+        return View::create($article, Response::HTTP_CREATED);
+    }
+    
     /**
      * Creates an Article resource
      * @Rest\Post("/articles")
