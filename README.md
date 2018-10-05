@@ -33,21 +33,28 @@ git push origin [name_of_your_new_branch]
 
 # Technologies : PHP7, Symfony4, angular, varnish cache, git, docker, rest api
 ###############################################################
-#     _                      _                 ____ _     ___
-#    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
-#   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
-#  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
-# /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
-#                |___/
+################### ANGULAR CLI	###############################
 ###############################################################
+
+# Download & install nodeJs : https://nodejs.org/en/download/ 
+
+# anstall angular cli :
+npm install -g @angular/cli
+npm list -g --depth=0
 
 # get in frontend directory
 cd frontend
 
-# start angular with --open, -o option to automatically open browser on http://localhost:4200/
+# install libs:
+npm install
+
+# run angular with (-o) option to automatically open browser on http://localhost:4200/
 ng serve --open
 
+# Finally, put any issues encoutred in : https://github.com/spidrotech/sf4_docker/issues 
+
 # Enjoy !
+
 
 Idea comes from websites example : 
 https://remixjobs.com/ 
@@ -56,5 +63,5 @@ https://www.monster.fr/
 https://www.chooseyourboss.com/
 https://www.freelance-info.fr/
 
-# Technologies : PHP7, Symfony4, angular6, jQuery3.3, bootstrap4, rest api
-# Environment : Docker, traefik, portainer, git, Trello
+# Technologies : PHP7, Symfony4, angular6, jQuery3.3, bootstrap4, varnish cache, git, docker, rest api
+# Environment : Docker, portainer, git, Trello
