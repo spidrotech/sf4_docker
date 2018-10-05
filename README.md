@@ -11,14 +11,11 @@ composer install
 
 # download & install docker : https://docs.docker.com/install/ 
 
-# install containers : (if doesn't work use 'sudo' !)
-docker_compose buid
-
 # configure docker env : 
 docker-compose up -d
 
-# launch in browser (TODO: if no traefik installed) :
-php bin/console server:run
+# launch in browser :
+localhost:8083
 
 
 # git experience
@@ -34,7 +31,6 @@ git merge --no-ff origin/master
 
 git push origin [name_of_your_new_branch]
 
-
 # Technologies : PHP7, Symfony4, angular, varnish cache, git, docker, rest api
 ###############################################################
 #     _                      _                 ____ _     ___
@@ -48,12 +44,10 @@ git push origin [name_of_your_new_branch]
 # get in frontend directory
 cd frontend
 
-# start angular with (-o) option to automatically open browser on http://localhost:4200/
+# start angular with --open, -o option to automatically open browser on http://localhost:4200/
 ng serve --open
 
 # Enjoy !
-
-
 
 Idea comes from websites example : 
 https://remixjobs.com/ 
